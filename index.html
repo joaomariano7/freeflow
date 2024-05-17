@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Monitoramento Free Flow</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5 text-center">Sistema de Monitoramento Free Flow</h1>
+    <div class="mt-4">
+      <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="nav-veiculos-tab" data-toggle="tab" href="#nav-veiculos" role="tab" aria-controls="nav-veiculos" aria-selected="true">Veículos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-porticos-tab" data-toggle="tab" href="#nav-porticos" role="tab" aria-controls="nav-porticos" aria-selected="false">Pórticos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-transacoes-tab" data-toggle="tab" href="#nav-transacoes" role="tab" aria-controls="nav-transacoes" aria-selected="false">Transações</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-equipamentos-tab" data-toggle="tab" href="#nav-equipamentos" role="tab" aria-controls="nav-equipamentos" aria-selected="false">Equipamentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-usuarios-tab" data-toggle="tab" href="#nav-usuarios" role="tab" aria-controls="nav-usuarios" aria-selected="false">Usuários</a>
+        </li>
+      </ul>
+      <div class="tab-content mt-4" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-veiculos" role="tabpanel" aria-labelledby="nav-veiculos-tab">
+          <h3>Veículos</h3>
+          <div id="veiculo-list" class="list-group"></div>
+        </div>
+        <div class="tab-pane fade" id="nav-porticos" role="tabpanel" aria-labelledby="nav-porticos-tab">
+          <h3>Pórticos</h3>
+          <div id="portico-list" class="list-group"></div>
+        </div>
+        <div class="tab-pane fade" id="nav-transacoes" role="tabpanel" aria-labelledby="nav-transacoes-tab">
+          <h3>Transações</h3>
+          <div id="transacao-list" class="list-group"></div>
+        </div>
+        <div class="tab-pane fade" id="nav-equipamentos" role="tabpanel" aria-labelledby="nav-equipamentos-tab">
+          <h3>Equipamentos</h3>
+          <div id="equipamento-list" class="list-group"></div>
+        </div>
+        <div class="tab-pane fade" id="nav-usuarios" role="tabpanel" aria-labelledby="nav-usuarios-tab">
+          <h3>Usuários</h3>
+          <div id="usuario-list" class="list-group"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
